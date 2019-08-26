@@ -10,20 +10,25 @@
       .app__content
         header
           img.logo(src="./assets/images/logo.svg")
+          h1 好室旅店。HOUSE HOTEL
+          address
+            a.address__item(href="https://goo.gl/maps/UURBnfgJKHEXsYyGA") 花蓮縣花蓮市國聯一路1號
+            a.address__item(href="tel:+88638321155") 038321155
+            a.address__item(href="mailto:house@hotel.com") HOUSE@HOTEL.COM
           .swiper-pagination(slot="pagination")
-        main
-          .room-item
-            img(src="")
-          .room-item
-            img(src="")
-          .room-item
-            img(src="")
-          .room-item
-            img(src="")
-          .room-item
-            img(src="")
-          .room-item
-            img(src="")
+        main.room
+          .room__item
+            img(src="./assets/images/index_room-item01.jpeg")
+          .room__item
+            img(src="./assets/images/index_room-item02.jpeg")
+          .room__item
+            img(src="./assets/images/index_room-item03.jpeg")
+          .room__item
+            img(src="./assets/images/index_room-item04.jpeg")
+          .room__item
+            img(src="./assets/images/index_room-item05.jpeg")
+          .room__item
+            img(src="./assets/images/index_room-item06.jpeg")
 
 </template>
 
@@ -80,6 +85,15 @@ export default {
 </script>
 
 <style lang="stylus">
+.swiper-pagination__bullet
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff
+  border-radius: 12px;
+  margin: 20px 10px;
+  display: inline-block;
+  &--active
+    background: #fff;
 
 </style>
 
@@ -102,5 +116,24 @@ export default {
     justify-content: center;
   &__content
     max-width: 1024px
+    display: flex;
+    align-items: center;
+header
+  width: 20%;
+  padding-right: 10%;
+  color: #fff;
+  font-size: 12px;
+h1
+  line-height: 18px;
+  text-align: left;
+  margin-top: 185.22px;
+  font-size: 12px;
+.address__item
+  display: block;
+.room
+  display: flex;
+  flex-wrap: wrap;
+  &__item
+    width 33.33%
 
 </style>
