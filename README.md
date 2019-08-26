@@ -1,4 +1,4 @@
-# thef2e2_week4_api
+# thef2e2_week6
 
 ## Project setup
 ```
